@@ -13,7 +13,10 @@
 - Docker
 - Docker Compose
 После установки Docker и Docker Compose, выполните следующие действия:
-1. Клонируйте репозиторий с кодом бота: git clone https://github.com/GlebDontsov/password-vault-bot.git
+1. Клонируйте репозиторий с кодом бота: 
+```
+git clone https://github.com/GlebDontsov/password-vault-bot.git
+```
 2. Создайте .env файл и заполните переменные окружения, указав данные для подключения к базе данных PostgreSQL и токен вашего Telegram-бота. Пример файла .env:
 ```
 BOT_TOKEN=<YOUR_BOT_TOKEN>
