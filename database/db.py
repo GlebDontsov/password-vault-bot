@@ -14,7 +14,7 @@ class DataBase:
     def existsUser(self, user_id):
         with self.conn:
             with self.conn.cursor() as cur:
-                cur.execute("SELECT id FROM users WHERE user_id = %s", (user_id,))
+                cur.execute("SELECT id FROM users WHERE user_id = %s;", (str(user_id),))
                 flag = bool(len(cur.fetchall()))
         return flag
 

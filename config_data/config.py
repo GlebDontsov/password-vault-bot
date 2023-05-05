@@ -32,8 +32,8 @@ def load_config(path: str) -> Config:
     env.read_env(path)
 
     return Config(tg_bot=TgBot(token=env('BOT_TOKEN')),
-                  db=DatabaseConfig(database=env('DATABASE'),
-                                    db_host=env('DB_HOST'),
-                                    db_user=env('DB_USER'),
-                                    db_password=env('DB_PASSWORD')),
+                  db=DatabaseConfig(database=env('POSTGRES_DB'),
+                                    db_host=env('POSTGRES_HOST'),
+                                    db_user=env('POSTGRES_USER'),
+                                    db_password=env('POSTGRES_PASSWORD')),
                   crypto=CryptoKey(key=env('CRYPTO_KEY').encode('utf-8')))
