@@ -3,7 +3,8 @@
 
 # Установка
 Для запуска бота на своем компьютере, вам понадобится установить следующее программное обеспечение:
-- . Docker
-- . Docker Compose
+- Docker
+- Docker Compose
 После установки Docker и Docker Compose, выполните команду:
+
 ```docker-compose up```
