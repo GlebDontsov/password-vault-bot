@@ -7,4 +7,6 @@
 - Docker Compose
 После установки Docker и Docker Compose, выполните команду:
 
-```docker-compose up```
+```
+docker-compose up
+```
